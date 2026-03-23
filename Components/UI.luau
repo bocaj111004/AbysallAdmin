@@ -479,7 +479,7 @@ function UI:CreateCommandBar(Callback)
 		Text.TextColor3 = Color3.fromRGB(255, 255, 255)
 		Text.TextXAlignment = Enum.TextXAlignment.Left
 		Text.TextSize = 16
-		Text.Text = Name .. " | " .. Description
+		Text.Text = Name .. " " .. Description
 		
 		table.insert(RegisteredCommands, {
 			Name = Name,
