@@ -491,37 +491,4 @@ function UI:CreateCommandBar(Callback)
 	return CommandBar
 end
 
-local Commands = {}
-local function RunCommand(Args)
-	if not string.find(Args, " ") then
-		if Commands[Args:lower()] then
-			Commands[Args:lower()]()
-		else
-			UI:Notify("Error", "'" .. Args .. "' is not a valid command.")
-		end
-	else
-		local UsedCommand = Args:split(" ")[1]:lower()
-		if Commands[UsedCommand] then
-		local NewArgs = Args:sub(#UsedCommand + 1, #Args)
-			Commands[UsedCommand](NewArgs)
-		else
-			UI:Notify("Error", "'" .. UsedCommand .. "' is not a valid command.")
-		end
-	end
-end
-
-local CommandBar = UI:CreateCommandBar(function(Text)
-	RunCommand(Text)
-end)
-
-local function AddCommand(Name, Description, Aliases, Callback)
-	Commands[Name:lower()] = Callback
-	CommandBar:AddCommand(Name:lower(), Description)
-
-	for Index, Alias in pairs(Aliases) do
-		Commands[Alias:lower()] = Callback
-		CommandBar:AddCommand(Alias:lower(), Description)
-	end
-end
-
 return UI
