@@ -184,7 +184,7 @@ function UI:MakeWindow(Options)
 	TitleText.TextColor3 = Color3.fromRGB(255, 255, 255)
 	TitleText.TextXAlignment = Enum.TextXAlignment.Left
 	TitleText.TextSize = 16
-	TitleText.Font = Enum.Font.Cartoon
+	TitleText.Font = Enum.Font.SourceSansBold
 	TitleText.Text = Options.Title or "Window"
 
 	local InnerFrame = Instance.new("Frame", MainFrame)
@@ -467,7 +467,7 @@ function UI:CreateCommandBar(Callback)
 	function CommandBar:AddCommand(Name, Description)
 		local Frame = Instance.new("Frame", SuggestionsFrame)
 		Frame.BackgroundTransparency = 1
-		Frame.Size = UDim2.new(1, 0, 0, 32)
+		Frame.Size = UDim2.new(1, 0, 0, 24)
 		Frame.BackgroundTransparency = 1
 		Frame.Visible = false
 		
