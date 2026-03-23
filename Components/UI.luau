@@ -184,7 +184,7 @@ function UI:MakeWindow(Options)
 	TitleText.TextColor3 = Color3.fromRGB(255, 255, 255)
 	TitleText.TextXAlignment = Enum.TextXAlignment.Left
 	TitleText.TextSize = 16
-	TitleText.Font = Enum.Font.SourceSansBold
+	TitleText.Font = Enum.Font.SourceSans
 	TitleText.Text = Options.Title or "Window"
 
 	local InnerFrame = Instance.new("Frame", MainFrame)
@@ -398,7 +398,7 @@ function UI:CreateCommandBar(Callback)
 	SuggestionsFrame.Parent = MainFrame
 	SuggestionsFrame.ScrollBarThickness = 0
 	SuggestionsFrame.BackgroundTransparency = 1
-	SuggestionsFrame.Size = UDim2.new(1, -16, 1, -32)
+	SuggestionsFrame.Size = UDim2.new(1, -16, 1, -24)
 	SuggestionsFrame.Position = UDim2.new(0, 8, 0, 32)
 	
 	local SuggestionsListLayout = Instance.new("UIListLayout", SuggestionsFrame)
