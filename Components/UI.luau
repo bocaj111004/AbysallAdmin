@@ -159,7 +159,7 @@ function UI:MakeWindow(Options)
 	local WindowContainer = Instance.new("ScreenGui", GetHiddenUI())
 	WindowContainer.Name = MakeRandom()
 	WindowContainer.IgnoreGuiInset = true
-	WindowContainer.DisplayOrder = 9999
+	WindowContainer.DisplayOrder = 2000000000
 	WindowContainer.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 	local MainFrame = Instance.new("Frame", WindowContainer)
@@ -284,7 +284,7 @@ end
 local NotificationWindowContainer = Instance.new("ScreenGui", GetHiddenUI())
 NotificationWindowContainer.Name = MakeRandom()
 NotificationWindowContainer.IgnoreGuiInset = true
-NotificationWindowContainer.DisplayOrder = 9999
+NotificationWindowContainer.DisplayOrder = 2000000000
 NotificationWindowContainer.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 local NotificationFrame = Instance.new("Frame", NotificationWindowContainer)
@@ -384,7 +384,7 @@ function UI:CreateCommandBar(Callback)
 	local WindowContainer = Instance.new("ScreenGui", GetHiddenUI())
 	WindowContainer.Name = MakeRandom()
 	WindowContainer.IgnoreGuiInset = true
-	WindowContainer.DisplayOrder = 9999
+	WindowContainer.DisplayOrder = 2000000000
 	WindowContainer.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 	local MainFrame = Instance.new("Frame", WindowContainer)
