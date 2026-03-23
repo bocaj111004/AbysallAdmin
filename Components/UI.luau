@@ -473,8 +473,7 @@ function UI:CreateCommandBar(Callback)
 		
 		local Text = Instance.new("TextLabel", Frame)
 		Text.BackgroundTransparency = 1
-		Text.Size = UDim2.new(1, -16, 1, -16)
-		Text.Position = UDim2.new(0, 8, 0, 8)
+		Text.Size = UDim2.new(1, 0, 1, -16)
 		Text.Font = Enum.Font.SourceSansBold
 		Text.TextColor3 = Color3.fromRGB(255, 255, 255)
 		Text.TextXAlignment = Enum.TextXAlignment.Left
