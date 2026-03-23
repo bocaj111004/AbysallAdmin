@@ -159,7 +159,7 @@ function UI:MakeWindow(Options)
 	local WindowContainer = Instance.new("ScreenGui", GetHiddenUI())
 	WindowContainer.Name = MakeRandom()
 	WindowContainer.IgnoreGuiInset = true
-	WindowContainer.DisplayOrder = 2000000000
+	WindowContainer.DisplayOrder = 2147483647
 	WindowContainer.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 	local MainFrame = Instance.new("Frame", WindowContainer)
@@ -284,7 +284,7 @@ end
 local NotificationWindowContainer = Instance.new("ScreenGui", GetHiddenUI())
 NotificationWindowContainer.Name = MakeRandom()
 NotificationWindowContainer.IgnoreGuiInset = true
-NotificationWindowContainer.DisplayOrder = 2000000000
+NotificationWindowContainer.DisplayOrder = 2147483647
 NotificationWindowContainer.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 local NotificationFrame = Instance.new("Frame", NotificationWindowContainer)
@@ -384,7 +384,7 @@ function UI:CreateCommandBar(Callback)
 	local WindowContainer = Instance.new("ScreenGui", GetHiddenUI())
 	WindowContainer.Name = MakeRandom()
 	WindowContainer.IgnoreGuiInset = true
-	WindowContainer.DisplayOrder = 2000000000
+	WindowContainer.DisplayOrder = 2147483647
 	WindowContainer.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 	local MainFrame = Instance.new("Frame", WindowContainer)
@@ -474,7 +474,7 @@ function UI:CreateCommandBar(Callback)
 		local Text = Instance.new("TextLabel", Frame)
 		Text.BackgroundTransparency = 1
 		Text.Size = UDim2.new(1, 0, 1, -16)
-		Text.Font = Enum.Font.SourceSansBold
+		Text.Font = Enum.Font.SourceSans
 		Text.TextColor3 = Color3.fromRGB(255, 255, 255)
 		Text.TextXAlignment = Enum.TextXAlignment.Left
 		Text.TextSize = 16
